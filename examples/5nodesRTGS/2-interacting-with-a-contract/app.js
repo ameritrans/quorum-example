@@ -2,10 +2,10 @@ import $ from 'jquery';
 import Web3 from 'web3quorum';
 
 // Instance Web3 using localhost testrpc
-const web3regulator = new Web3(new Web3.providers.HttpProvider("http://IP:22003"));
-const web3bank1 = new Web3(new Web3.providers.HttpProvider("http://IP:22000"));
-const web3bank2 = new Web3(new Web3.providers.HttpProvider("http://IP:22001"));
-const web3bank3 = new Web3(new Web3.providers.HttpProvider("http://IP:22002"));
+const web3regulator = new Web3(new Web3.providers.HttpProvider("http://localhost:52003"));
+const web3bank1 = new Web3(new Web3.providers.HttpProvider("http://localhost:52000"));
+const web3bank2 = new Web3(new Web3.providers.HttpProvider("http://localhost:52001"));
+const web3bank3 = new Web3(new Web3.providers.HttpProvider("http://localhost:52002"));
 
 // This is an interface of the MyToken contract, called ABI, that we will interact with it
 const BankContractABI = require('./MyBank.json');
